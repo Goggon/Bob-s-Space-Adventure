@@ -28,8 +28,6 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown("space") || Input.GetMouseButtonDown(0))
         {
-            Debug.Log("test");
-
             Vector2 move = new Vector2(0, MoveSpeed);
 
             if (begin == true)
@@ -51,9 +49,9 @@ public class PlayerController : MonoBehaviour {
         }
 	}
 
-    void OnCollisionEnter2D(Collision2D objectYouCollidedWith)
+    void OnCollisionEnter2D(Collision2D obj)
     {
-        if (objectYouCollidedWith.gameObject.name == ("South Wall") || objectYouCollidedWith.gameObject.name == ("North Wall"))
+        if (obj.gameObject.tag == "Walls")
         {
             Destroy(Player);
         }
