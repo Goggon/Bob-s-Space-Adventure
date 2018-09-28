@@ -25,6 +25,11 @@ public class Mover : MonoBehaviour {
         {
             Destroy(shot);
         }
+        else if (obj.gameObject.tag == "Enemy1")
+        {
+            Destroy(shot);
+            Destroy(obj.gameObject);
+        }
     }
 
 }
