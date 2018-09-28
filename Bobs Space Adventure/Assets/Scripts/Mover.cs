@@ -8,6 +8,8 @@ public class Mover : MonoBehaviour {
 
     public float speed;
 
+    public GameObject shot;
+
     // Use this for initialization
     void Start ()
     {
@@ -15,5 +17,14 @@ public class Mover : MonoBehaviour {
 
         rb2d.velocity = transform.right * speed;
 	}
+
+
+    void OnCollisionEnter2D(Collision2D obj)
+    {
+        if (obj.gameObject.tag == "Walls")
+        {
+            Destroy(shot);
+        }
+    }
 
 }
