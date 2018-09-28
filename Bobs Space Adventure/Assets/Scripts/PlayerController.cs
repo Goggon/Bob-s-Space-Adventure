@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour {
 
     public GameObject Player;
 
+    public GameObject Weapon;
+    public Transform WeaponSpawn;
+
 	// Use this for initialization
 	void Start () {
         this.transform.position = (Spawnpos);
@@ -46,7 +49,11 @@ public class PlayerController : MonoBehaviour {
                 rb2d.AddForce(move * -2);
                 invert = false;
             }
+            Instantiate(Weapon, WeaponSpawn.position, WeaponSpawn.rotation);
         }
+
+
+
 	}
 
     void OnCollisionEnter2D(Collision2D obj)
