@@ -12,7 +12,7 @@ public class Mover : MonoBehaviour {
     public GameObject shot;
 
     public Text Score;
-    private int point = 0;
+    public int point = 0;
 
     // Use this for initialization
     void Start ()
