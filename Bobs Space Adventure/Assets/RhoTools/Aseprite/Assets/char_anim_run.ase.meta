@@ -1,0 +1,8 @@
+fileFormatVersion: 2
+guid: 7c0205d4d75cb1c48b3ee10907b7ddf5
+timeCreated: 1512521455
+licenseType: Store
+DefaultImporter:
+  userData: '{"targetTexture":"c92e2bd276d32ed4984c0a349da9dcc8","targetText":"1cb757cd5d2c60f4cb1d15f7653554bc","useTags":"true","loopAnim":"false","useConfig":"true","border":"5","useChild":"true","alignment":"0","pivotX":"0.100000001490116","pivotY":"0.200000002980232","animType":"0","clips":["7ab1c6126e7e91c4d8d19e3f7e8e8f6d","416c940187f463c4f9af57db128e5cbe"],"autoImport":"false","importAnimations":"true","importSpritesheet":"true","createAnimator":"true","targetAnimator":"88400be09d870114491df24486087eb5","targetPrefab":"c1df4f5e993e4b347a7ab29909bebb01"}'
+  assetBundleName: 
+  assetBundleVariant: 
