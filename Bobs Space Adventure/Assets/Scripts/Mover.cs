@@ -11,17 +11,26 @@ public class Mover : MonoBehaviour {
 
     public GameObject shot;
 
-    public Text Score;
-    public int point = 0;
+    public int scoreValue;
+    private PlayerController gameController;
 
     // Use this for initialization
+
     void Start ()
     {
         rb2d = GetComponent<Rigidbody2D>();
 
         rb2d.velocity = transform.right * speed;
 
-        Score.text = "Score: " + point;
+        GameObject gameControllerObject = GameObject.FindWithTag("Player");
+        if (gameControllerObject != null)
+        {
+            gameController = gameControllerObject.GetComponent<PlayerController>();
+        }
+        if (gameController == null)
+        {
+            Debug.Log("Cannot find 'GameController' script");
+        }
     }
 
 
@@ -33,13 +42,12 @@ public class Mover : MonoBehaviour {
         }
         else if (obj.gameObject.tag == "Enemy1")
         {
+            scoreValue = 1;
             Destroy(shot);
             Destroy(obj.gameObject);
-            point = point + 1;
-            Score.text = "Score: " + point;
-            
-            
-            
+            gameController.AddScore(scoreValue);
+
+
         }
     }
 

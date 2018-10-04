@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 
@@ -20,15 +21,32 @@ public class PlayerController : MonoBehaviour {
     public GameObject Weapon;
     public Transform WeaponSpawn;
 
-	// Use this for initialization
-	void Start () {
+    public Text guiscore;
+    private int score;
+
+    // Use this for initialization
+    void Start () {
         this.transform.position = (Spawnpos);
 
-        rb2d = GetComponent<Rigidbody2D>();       
+        rb2d = GetComponent<Rigidbody2D>();
+        
+        
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    public void AddScore(int newScoreValue)
+    {
+        score += newScoreValue;
+        //UpdateScore();
+        guiscore.text = "Score: " + score;
+    }
+
+    void UpdateScore()
+    {
+        guiscore.text = "Score: " + score;
+    }
+
+    // Update is called once per frame
+    void Update () {
 		if(Input.GetKeyDown("space") || Input.GetMouseButtonDown(0))
         {
             Vector2 move = new Vector2(0, MoveSpeed);
