@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ba58ac5d05685a94dbf2b13a795943c0
+timeCreated: 1496615368
+licenseType: Store
+DefaultImporter:
+  userData: '{"useTags":"true", "loopAnim":"false", "useConfig":"true", "border":"0",
+    "useChild":"true", "alignment":"0", "animType":"0", "clips":[ "a2fbbae547b03f143bcc0d693780dff4",
+    "6ee95eafcddb97140aaa26f8e11758dd" ], "autoImport":"true", "pivotX":"0", "pivotY":"0",
+    "importAnimations":"true", "importSpritesheet":"true", "createAnimator":"true",
+    "targetTexture":"6cb1605adc399a3458ffa0c1aced14de", "targetAnimator":"2998bb4a100fc884b8c082d161e35bf3",
+    "targetText":"f3f1783f905caa24f981b3eaeea95ccc"}'
+  assetBundleName: 
+  assetBundleVariant: 

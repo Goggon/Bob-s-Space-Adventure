@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: c92e2bd276d32ed4984c0a349da9dcc8
+timeCreated: 1512845766
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: run1_0
+    21300002: run1_1
+    21300004: run1_2
+    21300006: run1_3
+    21300008: run1_4
+    21300010: run1_5
+    21300012: run1_6
+    21300014: run1_7
+    21300016: run_backwards_0
+    21300018: run_backwards_1
+    21300020: run_backwards_2
+    21300022: run_backwards_3
+    21300024: run_backwards_4
+    21300026: run_backwards_5
+    21300028: run_backwards_6
+    21300030: run_backwards_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: run1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 91
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 12}
+        - {x: 7, y: 16}
+        - {x: -9, y: 16}
+        - {x: -13, y: 14}
+        - {x: -14, y: 11}
+        - {x: -14, y: -13}
+        - {x: -13, y: -14}
+        - {x: -3, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: -12}
+        - {x: 14, y: -1}
+    - name: run1_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 91
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 8}
+        - {x: 7, y: 14}
+        - {x: -11, y: 14}
+        - {x: -13, y: 10}
+        - {x: -13, y: -16}
+        - {x: 8, y: -16}
+        - {x: 14, y: -2}
+        - {x: 14, y: 6}
+    - name: run1_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 91
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 12}
+        - {x: -7, y: 8}
+        - {x: -7, y: -16}
+        - {x: 6, y: -16}
+        - {x: 13, y: -11}
+        - {x: 13, y: 8}
+        - {x: 8, y: 12}
+    - name: run1_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 91
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -2, y: 14}
+        - {x: -4, y: 13}
+        - {x: -12, y: -8}
+        - {x: -12, y: -16}
+        - {x: 3, y: -16}
+        - {x: 8, y: -11}
+        - {x: 10, y: -6}
+        - {x: 10, y: 8}
+    - name: run1_4
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 91
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 12}
+        - {x: 7, y: 16}
+        - {x: -9, y: 16}
+        - {x: -13, y: 14}
+        - {x: -14, y: 11}
+        - {x: -14, y: -13}
+        - {x: -13, y: -14}
+        - {x: -3, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: -12}
+        - {x: 14, y: -1}
+    - name: run1_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 91
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 14}
+        - {x: -13, y: 9}
+        - {x: -13, y: -16}
+        - {x: 10, y: -16}
+        - {x: 14, y: -2}
+        - {x: 14, y: 10}
+        - {x: 8, y: 14}
+    - name: run1_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 49
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 12}
+        - {x: -7, y: 8}
+        - {x: -7, y: -16}
+        - {x: 6, y: -16}
+        - {x: 13, y: -11}
+        - {x: 13, y: 8}
+        - {x: 8, y: 12}
+    - name: run1_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 49
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 14}
+        - {x: -12, y: -2}
+        - {x: -12, y: -16}
+        - {x: 4, y: -16}
+        - {x: 10, y: -11}
+        - {x: 10, y: 14}
+    - name: run_backwards_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 49
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 14}
+        - {x: -12, y: -2}
+        - {x: -12, y: -16}
+        - {x: 4, y: -16}
+        - {x: 10, y: -11}
+        - {x: 10, y: 14}
+    - name: run_backwards_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 49
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 12}
+        - {x: -7, y: 8}
+        - {x: -7, y: -16}
+        - {x: 6, y: -16}
+        - {x: 13, y: -11}
+        - {x: 13, y: 8}
+        - {x: 8, y: 12}
+    - name: run_backwards_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 49
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 14}
+        - {x: -13, y: 9}
+        - {x: -13, y: -16}
+        - {x: 10, y: -16}
+        - {x: 14, y: -2}
+        - {x: 14, y: 10}
+        - {x: 8, y: 14}
+    - name: run_backwards_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 49
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 12}
+        - {x: 7, y: 16}
+        - {x: -9, y: 16}
+        - {x: -13, y: 14}
+        - {x: -14, y: 11}
+        - {x: -14, y: -13}
+        - {x: -13, y: -14}
+        - {x: -3, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: -12}
+        - {x: 14, y: -1}
+    - name: run_backwards_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 14}
+        - {x: -2, y: 14}
+        - {x: -4, y: 13}
+        - {x: -12, y: -8}
+        - {x: -12, y: -16}
+        - {x: 3, y: -16}
+        - {x: 8, y: -11}
+        - {x: 10, y: -6}
+        - {x: 10, y: 8}
+    - name: run_backwards_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 12}
+        - {x: -7, y: 8}
+        - {x: -7, y: -16}
+        - {x: 6, y: -16}
+        - {x: 13, y: -11}
+        - {x: 13, y: 8}
+        - {x: 8, y: 12}
+    - name: run_backwards_6
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 8}
+        - {x: 7, y: 14}
+        - {x: -11, y: 14}
+        - {x: -13, y: 10}
+        - {x: -13, y: -16}
+        - {x: 8, y: -16}
+        - {x: 14, y: -2}
+        - {x: 14, y: 6}
+    - name: run_backwards_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.1, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 12}
+        - {x: 7, y: 16}
+        - {x: -9, y: 16}
+        - {x: -13, y: 14}
+        - {x: -14, y: 11}
+        - {x: -14, y: -13}
+        - {x: -13, y: -14}
+        - {x: -3, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: -12}
+        - {x: 14, y: -1}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
