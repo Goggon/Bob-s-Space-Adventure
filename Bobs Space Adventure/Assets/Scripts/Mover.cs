@@ -33,10 +33,11 @@ public class Mover : MonoBehaviour {
         }
         else if (obj.gameObject.tag == "Enemy1")
         {
-            point = point + 1;
-            Score.text = "Score: " + point;
             Destroy(shot);
             Destroy(obj.gameObject);
+            point = point + 1;
+            Score.text = "Score: " + point;
+            
             
             
         }
