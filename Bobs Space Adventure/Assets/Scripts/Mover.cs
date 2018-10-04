@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mover : MonoBehaviour {
 
@@ -10,13 +11,18 @@ public class Mover : MonoBehaviour {
 
     public GameObject shot;
 
+    public Text Score;
+    private int point = 0;
+
     // Use this for initialization
     void Start ()
     {
         rb2d = GetComponent<Rigidbody2D>();
 
         rb2d.velocity = transform.right * speed;
-	}
+
+        Score.text = "Score: " + point;
+    }
 
 
     void OnCollisionEnter2D(Collision2D obj)
@@ -27,8 +33,12 @@ public class Mover : MonoBehaviour {
         }
         else if (obj.gameObject.tag == "Enemy1")
         {
+            point = point + 1;
+            Score.text = "Score: " + point;
             Destroy(shot);
             Destroy(obj.gameObject);
+            
+            
         }
     }
 
