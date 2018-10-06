@@ -4,30 +4,50 @@ using UnityEngine;
 
 public class Enemy01Controller : MonoBehaviour {
 
-    private Rigidbody2D rb2d;
+    private Rigidbody2D rbxd;
 
     public float movespeed;
 
     Vector2 Move;
 
+    private int isthissatart;
+
     // Use this for initialization
     void Start () {
-        rb2d = GetComponent<Rigidbody2D>();
-        Vector2 Move = new Vector2(0, movespeed);
-        rb2d.velocity = (Move);
+        rbxd = GetComponent<Rigidbody2D>();
+        isthissatart = 1;
+        Move = new Vector2(0, movespeed);
+
+        
+
+        Mover();
     }
 	
-	// Update is called once per frame
-	void Update () {
-        rb2d.velocity = (Move);
-    }
 
     void OnCollisionEnter2D(Collision2D obj)
     {
         if (obj.gameObject.tag == "Walls")
         {
-            rb2d.velocity = (Move * -1);
-            Debug.Log("help");
+            Mover();
+        }
+    }
+
+    void Mover()
+    {
+        switch (isthissatart)
+        {
+            case 1:
+                rbxd.velocity = (Move * -1);
+                isthissatart = 2;
+                break;
+            case 2:
+                rbxd.velocity = (Move * 1);
+                isthissatart = 3;
+                break;
+            case 3:
+                rbxd.velocity = (Move * -1);
+                isthissatart = 2;
+                break;
         }
     }
 }
