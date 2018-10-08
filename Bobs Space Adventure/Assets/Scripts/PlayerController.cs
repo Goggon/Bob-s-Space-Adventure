@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour {
         if (combonew == 0)
         {
             combonumero = combonew;
+            Combonr.text = combonumero + "x";
         }
         else
         {
