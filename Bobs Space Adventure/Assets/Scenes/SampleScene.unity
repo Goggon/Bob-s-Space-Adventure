@@ -341,6 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72107b7f18ccbfa46b3e98d52a2161c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   Barricade: {fileID: 131032121}
 --- !u!60 &131032125
 PolygonCollider2D:
@@ -600,6 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72107b7f18ccbfa46b3e98d52a2161c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   Barricade: {fileID: 139664407}
 --- !u!60 &139664411
 PolygonCollider2D:
@@ -717,6 +719,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1425986784}
+  - {fileID: 2005508718}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1257,6 +1260,7 @@ MonoBehaviour:
   Weapon: {fileID: 1208128074366334, guid: 1ad992605dabed149b1abd2b4b710944, type: 2}
   WeaponSpawn: {fileID: 475500855}
   guiscore: {fileID: 1425986785}
+  Combonr: {fileID: 2005508719}
 --- !u!212 &412893022
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2001,6 +2005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72107b7f18ccbfa46b3e98d52a2161c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   Barricade: {fileID: 538387771}
 --- !u!60 &538387775
 PolygonCollider2D:
@@ -3996,7 +4001,7 @@ GameObject:
   - component: {fileID: 1425986786}
   - component: {fileID: 1425986785}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4653,7 +4658,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72107b7f18ccbfa46b3e98d52a2161c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   Barricade: {fileID: 1816427188}
+--- !u!1 &2005508717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2005508718}
+  - component: {fileID: 2005508720}
+  - component: {fileID: 2005508719}
+  m_Layer: 5
+  m_Name: Combo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2005508718
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2005508717}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 255556582}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -38, y: -60}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2005508719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2005508717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0.9155059, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: test
+--- !u!222 &2005508720
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2005508717}
+  m_CullTransparentMesh: 0
 --- !u!1 &2084511899
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,9 @@ public class Mover : MonoBehaviour {
     public int scoreValue;
     private PlayerController gameController;
 
+    
+    private int combo;
+
     // Use this for initialization
 
     void Start ()
@@ -27,7 +30,7 @@ public class Mover : MonoBehaviour {
         {
             gameController = gameControllerObject.GetComponent<PlayerController>();
         }
-        if (gameController == null)
+        else if (gameController == null)
         {
             Debug.Log("Cannot find 'GameController' script");
         }
@@ -39,6 +42,8 @@ public class Mover : MonoBehaviour {
         if (obj.gameObject.tag == "Walls")
         {
             Destroy(shot);
+            combo = 0;
+            gameController.comboboi(combo);
         }
         else if (obj.gameObject.tag == "Enemy1")
         {
@@ -46,7 +51,8 @@ public class Mover : MonoBehaviour {
             Destroy(shot);
             Destroy(obj.gameObject);
             gameController.AddScore(scoreValue);
-
+            combo = 1;
+            gameController.comboboi(combo);
 
         }
     }

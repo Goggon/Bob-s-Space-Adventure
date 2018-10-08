@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Barricode : MonoBehaviour {
 
-    private int health;
+    public int health = 3;
     public GameObject Barricade;
 
-
-	// Use this for initialization
-	void Start ()
-    {
-        health = 3;
-	}
 	
 	// Update is called once per frame
 	void FixedUpdate ()

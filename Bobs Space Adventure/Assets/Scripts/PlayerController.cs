@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour {
     public Text guiscore;
     private int score;
 
+    public Text Combonr;
+    private int combonumero;
+
     // Use this for initialization
     void Start () {
         this.transform.position = (Spawnpos);
@@ -36,13 +39,21 @@ public class PlayerController : MonoBehaviour {
     public void AddScore(int newScoreValue)
     {
         score += newScoreValue;
-        //UpdateScore();
         guiscore.text = "Score: " + score;
     }
 
-    void UpdateScore()
+    public void comboboi(int combonew)
     {
-        guiscore.text = "Score: " + score;
+        if (combonew == 0)
+        {
+            combonumero = combonew;
+        }
+        else
+        {
+            combonumero += combonew;
+            Combonr.text = combonumero + "x";
+        }
+        
     }
 
     // Update is called once per frame
