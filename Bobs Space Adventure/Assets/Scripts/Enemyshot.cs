@@ -11,6 +11,7 @@ public class Enemyshot : MonoBehaviour {
     public GameObject shot;
 
 
+
     // Use this for initialization
     void Start () {
         rb2d = GetComponent<Rigidbody2D>();
@@ -25,9 +26,14 @@ public class Enemyshot : MonoBehaviour {
             Destroy(shot);
             Destroy(obj.gameObject);
         }
+        else if (obj.gameObject.tag == "Enemy1")
+        {
+            Physics.IgnoreCollision(this.GetComponent<Collider>(), GetComponent<Collider>());
+        }
         else if (obj.gameObject.tag == "walls")
         {
             Destroy(shot);
         }
+
     }
 }
