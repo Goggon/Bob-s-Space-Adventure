@@ -81,10 +81,18 @@ public class PlayerController : MonoBehaviour {
             }
             Instantiate(Weapon, WeaponSpawn.position, WeaponSpawn.rotation);
         }
-
-
-
 	}
+
+    private void FixedUpdate()
+    {
+        switch(score)
+        {
+            case 24:
+                Time.timeScale = 0;
+
+        }
+    
+    }
 
     void OnCollisionEnter2D(Collision2D obj)
     {

@@ -13,9 +13,9 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-  m_SourcePrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1208128074366334}
-  m_IsPrefabAsset: 0
+  m_IsPrefabParent: 0
 --- !u!1 &1208128074366334
 GameObject:
   m_ObjectHideFlags: 0

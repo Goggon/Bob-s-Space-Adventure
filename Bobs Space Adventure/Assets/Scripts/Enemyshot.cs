@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemyshot : MonoBehaviour {
 
     private Rigidbody2D rb2d;
+    public GameObject shooty;
 
     public float speed;
 
@@ -25,10 +26,6 @@ public class Enemyshot : MonoBehaviour {
         {
             Destroy(shot);
             Destroy(obj.gameObject);
-        }
-        else if (obj.gameObject.tag == "Enemy1")
-        {
-            Physics.IgnoreCollision(this.GetComponent<Collider>(), GetComponent<Collider>());
         }
         else if (obj.gameObject.tag == "walls")
         {
