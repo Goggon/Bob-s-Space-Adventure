@@ -48,7 +48,6 @@ public class Enemy01Controller : MonoBehaviour {
             Instantiate(enemyweapon, pos.position, pos.rotation);
             cooldowntimer = Random.Range(7, 20);
         }
-            
     }
 
     void OnCollisionEnter2D(Collision2D obj)
