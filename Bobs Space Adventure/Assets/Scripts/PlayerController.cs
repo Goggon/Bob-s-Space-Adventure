@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour {
         {
             case 24:
                 Time.timeScale = 0;
-
+                break;
         }
     
     }

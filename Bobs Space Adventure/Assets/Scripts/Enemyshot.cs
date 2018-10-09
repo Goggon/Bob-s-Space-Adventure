@@ -20,17 +20,16 @@ public class Enemyshot : MonoBehaviour {
         rb2d.velocity = -transform.right * speed;
     }
 
-    void OnCollisionEnter2D(Collision2D obj)
+    private void OnTriggerEnter2D(Collider2D obj)
     {
         if (obj.gameObject.tag == "Player")
         {
-            Destroy(shot);
+            Destroy(this.gameObject);
             Destroy(obj.gameObject);
         }
-        else if (obj.gameObject.tag == "walls")
+        else if (obj.gameObject.tag == "Walls")
         {
-            Destroy(shot);
+            Destroy(this.gameObject);
         }
-
     }
 }

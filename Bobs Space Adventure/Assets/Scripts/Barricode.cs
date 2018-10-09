@@ -27,6 +27,20 @@ public class Barricode : MonoBehaviour {
                 Destroy(Barricade);
             }
         }
-
     }
+
+    //private void OnTriggerEnter2D(Collider2D Trig)
+    //{
+    //    if (Trig.gameObject.tag == "shot")
+    //    {
+    //        if (health > 1)
+    //        {
+    //            health = health - 1;
+    //        }
+    //        else if (health == 1)
+    //        {
+    //            Destroy(Barricade);
+    //        }
+    //    }
+    //}
 }
