@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 
     public Text guiscore;
     private int score;
+    public int wincondition;
 
     public Text Combonr;
     private int combonumero;
@@ -35,14 +36,13 @@ public class PlayerController : MonoBehaviour {
         this.transform.position = (Spawnpos);
 
         rb2d = GetComponent<Rigidbody2D>();
-        
-        
     }
 
     public void AddScore(int newScoreValue)
     {
         score += newScoreValue;
         guiscore.text = "Score: " + score;
+        wincondition = score;
     }
 
     public void comboboi(int combonew)
@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        switch(score)
+        switch(wincondition)
         {
             case 24:
                 Wintext.GetComponent<Text> ().enabled = true;
