@@ -7,6 +7,10 @@ public class Barricode : MonoBehaviour {
     public int health = 3;
     public GameObject Barricade;
 
+    public Sprite nodmg;
+    public Sprite onedmg;
+    public Sprite twodmg;
+
 	
 	// Update is called once per frame
 	void FixedUpdate ()
@@ -18,15 +22,20 @@ public class Barricode : MonoBehaviour {
     {
         if (obj.gameObject.tag == "shot")
         {
-            if (health > 1)
+            switch (health)
             {
-                health = health - 1;
+                case 3:
+                    this.GetComponent<SpriteRenderer>().sprite = onedmg;
+                    health -= 1;
+                    break;
+                case 2:
+                    this.GetComponent<SpriteRenderer>().sprite = twodmg;
+                    health -= 1;
+                    break;
+                case 1:
+                    Destroy(Barricade);
+                    break;
             }
-            else if (health == 1)
-            {
-                Destroy(Barricade);
-            }
-        }
     }
 
     //private void OnTriggerEnter2D(Collider2D Trig)
