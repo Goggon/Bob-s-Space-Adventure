@@ -1,30 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// Touchable component
+using UnityEngine.SceneManagement;
 
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEditor;
+public class Play : MonoBehaviour {
 
+    public string lvl1;
 
-public class Play : Text
-{
-    protected override void Awake()
+    public void startogamo()
     {
-        base.Awake();
-    }
-}
- 
- // Touchable_Editor component, to prevent treating the component as a Text object.
- 
- 
- 
- [CustomEditor(typeof(Play))]
-public class Play_Editor : Editor
-{
-    public override void OnInspectorGUI()
-    {
-        Debug.Log("xd");
+        SceneManager.LoadScene(lvl1);
     }
 }
