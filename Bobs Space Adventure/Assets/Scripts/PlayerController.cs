@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour {
     public Text Combonr;
     private int combonumero;
 
+    public Text Wintext;
+    public Text WinUnder;
+
     // Use this for initialization
     void Start () {
         this.transform.position = (Spawnpos);
@@ -88,6 +91,8 @@ public class PlayerController : MonoBehaviour {
         switch(score)
         {
             case 24:
+                Wintext.GetComponent<Text> ().enabled = true;
+                WinUnder.GetComponent<Text>().enabled = true;
                 Time.timeScale = 0;
                 break;
         }
