@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Barricode : MonoBehaviour {
+public class Barricode : MonoBehaviour
+{
 
     public int health = 3;
     public GameObject Barricade;
@@ -11,12 +12,12 @@ public class Barricode : MonoBehaviour {
     public Sprite onedmg;
     public Sprite twodmg;
 
-	
-	// Update is called once per frame
-	void FixedUpdate ()
+
+    // Update is called once per frame
+    void FixedUpdate()
     {
-		
-	}
+
+    }
 
     void OnCollisionEnter2D(Collision2D obj)
     {
@@ -36,20 +37,6 @@ public class Barricode : MonoBehaviour {
                     Destroy(Barricade);
                     break;
             }
+        }
     }
-
-    //private void OnTriggerEnter2D(Collider2D Trig)
-    //{
-    //    if (Trig.gameObject.tag == "shot")
-    //    {
-    //        if (health > 1)
-    //        {
-    //            health = health - 1;
-    //        }
-    //        else if (health == 1)
-    //        {
-    //            Destroy(Barricade);
-    //        }
-    //    }
-    //}
 }
