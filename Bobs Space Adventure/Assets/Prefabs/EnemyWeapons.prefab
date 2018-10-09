@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooty: {fileID: 0}
-  speed: 15
+  speed: 10
   shot: {fileID: 1541374191681666}
 --- !u!212 &212990673250563632
 SpriteRenderer:
