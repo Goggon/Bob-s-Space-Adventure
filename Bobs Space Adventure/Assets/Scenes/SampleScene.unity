@@ -377,6 +377,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   Barricade: {fileID: 131032121}
+  nodmg: {fileID: 21300000, guid: 77c91d176b124c44ca553cfe2c8ea4df, type: 3}
+  onedmg: {fileID: 21300000, guid: ea2c779b75a064740ba9d90882b206a5, type: 3}
+  twodmg: {fileID: 21300000, guid: 4f88c8db895e2104bb1caaed0702464f, type: 3}
 --- !u!60 &131032125
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -643,6 +646,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   Barricade: {fileID: 139664407}
+  nodmg: {fileID: 21300000, guid: 77c91d176b124c44ca553cfe2c8ea4df, type: 3}
+  onedmg: {fileID: 21300000, guid: ea2c779b75a064740ba9d90882b206a5, type: 3}
+  twodmg: {fileID: 21300000, guid: 4f88c8db895e2104bb1caaed0702464f, type: 3}
 --- !u!60 &139664411
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1458,6 +1464,8 @@ MonoBehaviour:
   WeaponSpawn: {fileID: 475500855}
   guiscore: {fileID: 1425986785}
   Combonr: {fileID: 2005508719}
+  Wintext: {fileID: 1859655384}
+  WinUnder: {fileID: 628195998}
 --- !u!212 &412893022
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2272,6 +2280,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   Barricade: {fileID: 538387771}
+  nodmg: {fileID: 21300000, guid: 77c91d176b124c44ca553cfe2c8ea4df, type: 3}
+  onedmg: {fileID: 21300000, guid: ea2c779b75a064740ba9d90882b206a5, type: 3}
+  twodmg: {fileID: 21300000, guid: 4f88c8db895e2104bb1caaed0702464f, type: 3}
 --- !u!60 &538387775
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5454,6 +5465,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   Barricade: {fileID: 1816427188}
+  nodmg: {fileID: 21300000, guid: 77c91d176b124c44ca553cfe2c8ea4df, type: 3}
+  onedmg: {fileID: 21300000, guid: ea2c779b75a064740ba9d90882b206a5, type: 3}
+  twodmg: {fileID: 21300000, guid: 4f88c8db895e2104bb1caaed0702464f, type: 3}
 --- !u!1 &1818226797
 GameObject:
   m_ObjectHideFlags: 0
