@@ -24,7 +24,7 @@ public class Enemy01Controller : MonoBehaviour {
         isthissatart = 1;
         Move = new Vector2(0, movespeed);
 
-        cooldown = Random.Range(7, 20);
+        cooldown = Random.Range(3, 20);
 
         cooldowntimer = cooldown;
 
