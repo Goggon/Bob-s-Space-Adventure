@@ -31,11 +31,16 @@ public class PlayerController : MonoBehaviour {
     public Text Wintext;
     public Text WinUnder;
 
+    private int enemynumber;
+
     // Use this for initialization
     void Start () {
         this.transform.position = (Spawnpos);
 
         rb2d = GetComponent<Rigidbody2D>();
+
+        GameObject[] enemycount = GameObject.FindGameObjectsWithTag("Enemy1");
+        enemynumber = enemycount.Length;
     }
 
     public void AddScore(int newScoreValue)
@@ -88,15 +93,12 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        switch(wincondition)
+        if (wincondition == enemynumber)
         {
-            case 24:
-                Wintext.GetComponent<Text> ().enabled = true;
-                WinUnder.GetComponent<Text>().enabled = true;
-                Time.timeScale = 0;
-                break;
+            Wintext.GetComponent<Text>().enabled = true;
+            WinUnder.GetComponent<Text>().enabled = true;
+            Time.timeScale = 0;
         }
-    
     }
 
     void OnCollisionEnter2D(Collision2D obj)
