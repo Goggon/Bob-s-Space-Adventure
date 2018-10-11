@@ -1422,6 +1422,10 @@ MonoBehaviour:
   Combonr: {fileID: 2005508719}
   Wintext: {fileID: 1859655384}
   WinUnder: {fileID: 628195998}
+  nextlvl: 0
+  final: 0
+  lvl2: Level2
+  lvl3: BossScene
 --- !u!212 &412893022
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1545,7 +1549,7 @@ GameObject:
   - component: {fileID: 417553450}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Enemy1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

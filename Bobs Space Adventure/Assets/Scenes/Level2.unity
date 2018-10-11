@@ -235,6 +235,10 @@ MonoBehaviour:
   Combonr: {fileID: 1279406536}
   Wintext: {fileID: 2004224752}
   WinUnder: {fileID: 1837247064}
+  nextlvl: 0
+  final: 0
+  lvl2: Level2
+  lvl3: BossScene
 --- !u!212 &47282674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2019,8 +2023,8 @@ MonoBehaviour:
   health: 3
   Barricade: {fileID: 433269247}
   nodmg: {fileID: 21300000, guid: 77c91d176b124c44ca553cfe2c8ea4df, type: 3}
-  onedmg: {fileID: 21300000, guid: ea2c779b75a064740ba9d90882b206a5, type: 3}
-  twodmg: {fileID: 21300000, guid: 4f88c8db895e2104bb1caaed0702464f, type: 3}
+  onedmg: {fileID: 21300000, guid: 14778f31f6a20634089e2bd8319497d0, type: 3}
+  twodmg: {fileID: 21300000, guid: d452d19ee2556ea46881367254b28d38, type: 3}
 --- !u!212 &433269251
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2639,8 +2643,8 @@ MonoBehaviour:
   health: 3
   Barricade: {fileID: 1144814591}
   nodmg: {fileID: 21300000, guid: 77c91d176b124c44ca553cfe2c8ea4df, type: 3}
-  onedmg: {fileID: 21300000, guid: ea2c779b75a064740ba9d90882b206a5, type: 3}
-  twodmg: {fileID: 21300000, guid: 4f88c8db895e2104bb1caaed0702464f, type: 3}
+  onedmg: {fileID: 21300000, guid: 14778f31f6a20634089e2bd8319497d0, type: 3}
+  twodmg: {fileID: 21300000, guid: d452d19ee2556ea46881367254b28d38, type: 3}
 --- !u!60 &1144814594
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2787,8 +2791,8 @@ MonoBehaviour:
   health: 3
   Barricade: {fileID: 1168058484}
   nodmg: {fileID: 21300000, guid: 77c91d176b124c44ca553cfe2c8ea4df, type: 3}
-  onedmg: {fileID: 21300000, guid: ea2c779b75a064740ba9d90882b206a5, type: 3}
-  twodmg: {fileID: 21300000, guid: 4f88c8db895e2104bb1caaed0702464f, type: 3}
+  onedmg: {fileID: 21300000, guid: 14778f31f6a20634089e2bd8319497d0, type: 3}
+  twodmg: {fileID: 21300000, guid: d452d19ee2556ea46881367254b28d38, type: 3}
 --- !u!212 &1168058488
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3091,8 +3095,8 @@ MonoBehaviour:
   health: 3
   Barricade: {fileID: 1390577959}
   nodmg: {fileID: 21300000, guid: 77c91d176b124c44ca553cfe2c8ea4df, type: 3}
-  onedmg: {fileID: 21300000, guid: ea2c779b75a064740ba9d90882b206a5, type: 3}
-  twodmg: {fileID: 21300000, guid: 4f88c8db895e2104bb1caaed0702464f, type: 3}
+  onedmg: {fileID: 21300000, guid: 14778f31f6a20634089e2bd8319497d0, type: 3}
+  twodmg: {fileID: 21300000, guid: d452d19ee2556ea46881367254b28d38, type: 3}
 --- !u!212 &1390577963
 SpriteRenderer:
   m_ObjectHideFlags: 0

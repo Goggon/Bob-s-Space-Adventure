@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 
@@ -32,6 +33,12 @@ public class PlayerController : MonoBehaviour {
     public Text WinUnder;
 
     private int enemynumber;
+
+    public bool nextlvl;
+    public bool final;
+
+    public string lvl2;
+    public string lvl3;
 
     // Use this for initialization
     void Start () {
@@ -67,7 +74,19 @@ public class PlayerController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		if(Input.GetKeyDown("space") || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown("space") && nextlvl == true && final == true)
+        {
+            SceneManager.LoadScene(lvl3);
+            Time.timeScale = 1;
+        }
+        else if (Input.GetKeyDown("space") && nextlvl == true && final == false)
+        {
+            SceneManager.LoadScene(lvl2);
+            Time.timeScale = 1;
+            nextlvl = false;
+            final = true;
+        }
+        else if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0))
         {
             Vector2 move = new Vector2(0, MoveSpeed);
 
@@ -89,12 +108,15 @@ public class PlayerController : MonoBehaviour {
             }
             Instantiate(Weapon, WeaponSpawn.position, WeaponSpawn.rotation);
         }
+
+
 	}
 
     private void FixedUpdate()
     {
         if (wincondition == enemynumber)
         {
+            nextlvl = true;
             Wintext.GetComponent<Text>().enabled = true;
             WinUnder.GetComponent<Text>().enabled = true;
             Time.timeScale = 0;
