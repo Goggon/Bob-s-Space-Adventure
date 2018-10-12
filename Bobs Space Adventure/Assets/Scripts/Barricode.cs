@@ -12,11 +12,14 @@ public class Barricode : MonoBehaviour
     public Sprite onedmg;
     public Sprite twodmg;
 
+    public AudioClip Barrierdmg;
 
-    // Update is called once per frame
-    void FixedUpdate()
+    public AudioSource source;
+
+
+    void Start()
     {
-
+        //source = GetComponent<AudioSource>();
     }
 
     void OnCollisionEnter2D(Collision2D obj)
@@ -28,13 +31,16 @@ public class Barricode : MonoBehaviour
                 case 3:
                     this.GetComponent<SpriteRenderer>().sprite = onedmg;
                     health -= 1;
+                    source.PlayOneShot(Barrierdmg, 0.7F);
                     break;
                 case 2:
                     this.GetComponent<SpriteRenderer>().sprite = twodmg;
                     health -= 1;
+                    source.PlayOneShot(Barrierdmg, 0.7F);
                     break;
                 case 1:
                     Destroy(Barricade);
+                    source.PlayOneShot(Barrierdmg, 0.7F);
                     break;
             }
         }

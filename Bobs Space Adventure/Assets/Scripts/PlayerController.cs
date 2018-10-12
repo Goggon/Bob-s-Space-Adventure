@@ -121,7 +121,6 @@ public class PlayerController : MonoBehaviour {
             WinUnder.GetComponent<Text>().enabled = true;
             Time.timeScale = 0;
         }
-        
     }
 
     void OnCollisionEnter2D(Collision2D obj)
