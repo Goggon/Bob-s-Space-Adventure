@@ -58,13 +58,6 @@ public class Enemy01Controller : MonoBehaviour {
         }
     }
 
-    private void FixedUpdate()
-    {
-
-
-        
-    }
-
     void Mover()
     {
         switch (isthissatart)

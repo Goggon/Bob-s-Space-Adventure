@@ -53,8 +53,8 @@ public class Mover : MonoBehaviour {
             gameController.AddScore(scoreValue);
             combo = 1;
             gameController.comboboi(combo);
-
         }
+        
     }
 
 }

@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
 
 
-    private Vector3 Spawnpos = new Vector3(-9, 2.98F, 0);
+    private Vector3 Spawnpos = new Vector3(-7.42F, 3.04F, 0);
     public float MoveSpeed;
 
     public bool invert = true;
@@ -121,6 +121,7 @@ public class PlayerController : MonoBehaviour {
             WinUnder.GetComponent<Text>().enabled = true;
             Time.timeScale = 0;
         }
+        
     }
 
     void OnCollisionEnter2D(Collision2D obj)
