@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 
@@ -31,11 +32,22 @@ public class PlayerController : MonoBehaviour {
     public Text Wintext;
     public Text WinUnder;
 
+    private int enemynumber;
+
+    public bool nextlvl;
+    public bool final;
+
+    public string lvl2;
+    public string lvl3;
+
     // Use this for initialization
     void Start () {
         this.transform.position = (Spawnpos);
 
         rb2d = GetComponent<Rigidbody2D>();
+
+        GameObject[] enemycount = GameObject.FindGameObjectsWithTag("Enemy1");
+        enemynumber = enemycount.Length;
     }
 
     public void AddScore(int newScoreValue)
@@ -62,7 +74,19 @@ public class PlayerController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		if(Input.GetKeyDown("space") || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown("space") && nextlvl == true && final == true)
+        {
+            SceneManager.LoadScene(lvl3);
+            Time.timeScale = 1;
+        }
+        else if (Input.GetKeyDown("space") && nextlvl == true && final == false)
+        {
+            SceneManager.LoadScene(lvl2);
+            Time.timeScale = 1;
+            nextlvl = false;
+            final = true;
+        }
+        else if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0))
         {
             Vector2 move = new Vector2(0, MoveSpeed);
 
@@ -84,19 +108,19 @@ public class PlayerController : MonoBehaviour {
             }
             Instantiate(Weapon, WeaponSpawn.position, WeaponSpawn.rotation);
         }
+
+
 	}
 
     private void FixedUpdate()
     {
-        switch(wincondition)
+        if (wincondition == enemynumber)
         {
-            case 24:
-                Wintext.GetComponent<Text> ().enabled = true;
-                WinUnder.GetComponent<Text>().enabled = true;
-                Time.timeScale = 0;
-                break;
+            nextlvl = true;
+            Wintext.GetComponent<Text>().enabled = true;
+            WinUnder.GetComponent<Text>().enabled = true;
+            Time.timeScale = 0;
         }
-    
     }
 
     void OnCollisionEnter2D(Collision2D obj)
