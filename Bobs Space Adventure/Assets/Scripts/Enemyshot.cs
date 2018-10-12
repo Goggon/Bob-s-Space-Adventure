@@ -11,13 +11,16 @@ public class Enemyshot : MonoBehaviour {
 
     public GameObject shot;
 
+    public AudioClip Enemypew;
 
+    public AudioSource source;
 
     // Use this for initialization
     void Start () {
         rb2d = GetComponent<Rigidbody2D>();
 
         rb2d.velocity = -transform.right * speed;
+        source.PlayOneShot(Enemypew, 0.7F);
     }
 
     private void OnTriggerEnter2D(Collider2D obj)
