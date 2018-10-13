@@ -100,13 +100,14 @@ public class PlayerController : MonoBehaviour {
             {
                 rb2d.AddForce(move * 2);
                 invert = true;
+                Instantiate(Weapon, WeaponSpawn.position, WeaponSpawn.rotation);
             }
             else if (invert == true)
             {
                 rb2d.AddForce(move * -2);
                 invert = false;
+                Instantiate(Weapon, WeaponSpawn.position, WeaponSpawn.rotation);
             }
-            Instantiate(Weapon, WeaponSpawn.position, WeaponSpawn.rotation);
         }
 
 
