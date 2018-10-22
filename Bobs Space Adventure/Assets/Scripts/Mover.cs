@@ -17,6 +17,11 @@ public class Mover : MonoBehaviour {
     
     private int combo;
 
+
+    public AudioClip pew;
+
+    public AudioSource source;
+
     // Use this for initialization
 
     void Start ()
@@ -24,7 +29,7 @@ public class Mover : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
 
         rb2d.velocity = transform.right * speed;
-
+        source.PlayOneShot(pew, 0.7F);
         GameObject gameControllerObject = GameObject.FindWithTag("Player");
         if (gameControllerObject != null)
         {
